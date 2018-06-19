@@ -3,190 +3,190 @@ Ending argument loop
 Singularity version: 2.5.1-master.gd6e81547
 Exec'ing: /usr/local/libexec/singularity/cli/build.exec
 Using container recipe deffile: Singularity
-VERBOSE [U=0,P=6427]       message_init()                            Set messagelevel to: 5
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
-[0mDEBUG   [U=0,P=6427]       singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key allow setuid = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key max loop devices = '256'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key allow pid ns = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key config passwd = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key config group = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key config resolv_conf = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount proc = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount sys = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount dev = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount devpts = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount home = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount tmp = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount hostfs = 'no'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key bind path = '/etc/localtime'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key bind path = '/etc/hosts'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key user bind control = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key enable overlay = 'try'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key mount slave = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key sessiondir max size = '16'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key allow container squashfs = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key allow container extfs = 'yes'
-[0mVERBOSE [U=0,P=6427]       singularity_config_parse()                Got config key allow container dir = 'yes'
-[0mDEBUG   [U=0,P=6427]       singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
-[0mVERBOSE [U=0,P=6427]       singularity_registry_init()               Initializing Singularity Registry
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.NZBV0w'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.NZBV0w) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.NZBV0w'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.NZBV0w) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'HOME'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'TARGET_UID'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'TARGET_GID'
-[0mDEBUG   [U=0,P=6427]       singularity_priv_init()                   Initializing user info
-[0mDEBUG   [U=0,P=6427]       singularity_priv_init()                   Set the calling user's username to: root
-[0mDEBUG   [U=0,P=6427]       singularity_priv_init()                   Marking uinfo structure as ready
-[0mDEBUG   [U=0,P=6427]       singularity_priv_init()                   Obtaining home directory
-[0mVERBOSE [U=0,P=6427]       singularity_priv_init()                   Set home (via getpwuid()) to: /root
-[0mINFO    [U=0,P=6427]       main()                                    Sanitizing environment
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: LS_COLORS
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: LANG
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: DISPLAY
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SUDO_GID
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: USERNAME
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SUDO_COMMAND
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: USER
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_version
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: PWD
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: HOME
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: LC_CTYPE
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SUDO_USER
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SUDO_UID
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: MAIL
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: TERM
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SHELL
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SHLVL
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_bindir
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: LOGNAME
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: XAUTHORITY
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: PATH
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
-[0mDEBUG   [U=0,P=6427]       envclean()                                Unsetting environment variable: _
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
-[0mVERBOSE [U=0,P=6427]       main()                                    Instantiating writable container image object
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.NZBV0w'
-[0mDEBUG   [U=0,P=6427]       singularity_image_init()                  Calling image_init for each file system module
-[0mDEBUG   [U=0,P=6427]       singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.NZBV0w
-[0mDEBUG   [U=0,P=6427]       singularity_image_init()                  got image_init type for directory
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
-[0mDEBUG   [U=0,P=6427]       singularity_suid_enabled()                Executable is not SUID
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=6427]       singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
-[0mDEBUG   [U=0,P=6427]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
-[0mDEBUG   [U=0,P=6427]       singularity_priv_escalate()               Running as root, not changing privileges
-[0mDEBUG   [U=0,P=6427]       singularity_runtime_ns_mnt()              Virtualizing FS namespace
-[0mDEBUG   [U=0,P=6427]       singularity_runtime_ns_mnt()              Virtualizing mount namespace
-[0mDEBUG   [U=0,P=6427]       singularity_priv_drop()                   Running as root, not changing privileges
-[0mDEBUG   [U=0,P=6427]       singularity_runtime_ns_mnt()              Making mounts slave
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=6427]       singularity_image_mount()                 Figuring out which mount module to use...
-[0mDEBUG   [U=0,P=6427]       singularity_image_mount()                 Calling dir_mount
-[0mDEBUG   [U=0,P=6427]       singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.NZBV0w->/usr/local/var/singularity/mnt/container
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mVERBOSE [U=0,P=6427]       main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=6427]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=6427]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=6427]       singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
-[0mVERBOSE [U=0,P=6427]       main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=6427]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
-[0mVERBOSE [U=0,P=6427]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
-[0mVERBOSE [U=0,P=6427]       main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=6427]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
-[0mVERBOSE [U=0,P=6427]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=6427]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.NZBV0w'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.NZBV0w'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'NOTEST'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'BUILDSECTION'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'CACHEDIR'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning NULL on 'NOHTTPS'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
-[0mDEBUG   [U=0,P=6427]       singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'HOME' = '/root'
-[0mDEBUG   [U=0,P=6427]       envar_set()                               Setting environment variable: 'LANG' = 'C'
-[0mVERBOSE [U=0,P=6439]       message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=6439]       main()                                    Iterating through file looking for sections matching: %pre
+VERBOSE [U=0,P=1204]       message_init()                            Set messagelevel to: 5
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
+[0mDEBUG   [U=0,P=1204]       singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow setuid = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key max loop devices = '256'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow pid ns = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config passwd = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config group = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config resolv_conf = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount proc = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount sys = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount dev = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount devpts = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount home = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount tmp = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount hostfs = 'no'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key bind path = '/etc/localtime'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key bind path = '/etc/hosts'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key user bind control = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key enable overlay = 'try'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount slave = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key sessiondir max size = '16'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container squashfs = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container extfs = 'yes'
+[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container dir = 'yes'
+[0mDEBUG   [U=0,P=1204]       singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
+[0mVERBOSE [U=0,P=1204]       singularity_registry_init()               Initializing Singularity Registry
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.94tJ5O'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.94tJ5O) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.94tJ5O) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'HOME'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'TARGET_UID'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'TARGET_GID'
+[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Initializing user info
+[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Set the calling user's username to: root
+[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Marking uinfo structure as ready
+[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Obtaining home directory
+[0mVERBOSE [U=0,P=1204]       singularity_priv_init()                   Set home (via getpwuid()) to: /root
+[0mINFO    [U=0,P=1204]       main()                                    Sanitizing environment
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LS_COLORS
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LANG
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: DISPLAY
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_GID
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: USERNAME
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_COMMAND
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: USER
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_version
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: PWD
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: HOME
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LC_CTYPE
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_USER
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_UID
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: MAIL
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: TERM
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SHELL
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SHLVL
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_bindir
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LOGNAME
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: XAUTHORITY
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: PATH
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
+[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: _
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
+[0mVERBOSE [U=0,P=1204]       main()                                    Instantiating writable container image object
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
+[0mDEBUG   [U=0,P=1204]       singularity_image_init()                  Calling image_init for each file system module
+[0mDEBUG   [U=0,P=1204]       singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.94tJ5O
+[0mDEBUG   [U=0,P=1204]       singularity_image_init()                  got image_init type for directory
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
+[0mDEBUG   [U=0,P=1204]       singularity_suid_enabled()                Executable is not SUID
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
+[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
+[0mDEBUG   [U=0,P=1204]       singularity_priv_escalate()               Running as root, not changing privileges
+[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Virtualizing FS namespace
+[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Virtualizing mount namespace
+[0mDEBUG   [U=0,P=1204]       singularity_priv_drop()                   Running as root, not changing privileges
+[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Making mounts slave
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=1204]       singularity_image_mount()                 Figuring out which mount module to use...
+[0mDEBUG   [U=0,P=1204]       singularity_image_mount()                 Calling dir_mount
+[0mDEBUG   [U=0,P=1204]       singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.94tJ5O->/usr/local/var/singularity/mnt/container
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
+[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
+[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
+[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
+[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.94tJ5O'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'NOTEST'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'BUILDSECTION'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'CACHEDIR'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'NOHTTPS'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
+[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'HOME' = '/root'
+[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'LANG' = 'C'
+[0mVERBOSE [U=0,P=1216]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=1216]       main()                                    Iterating through file looking for sections matching: %pre
 [0mAdding base Singularity environment to container
 W: Cannot check Release signature; keyring file not available /usr/share/keyrings/ubuntu-archive-keyring.gpg
 I: Retrieving InRelease 
@@ -678,19 +678,16 @@ I: Configuring libapt-pkg5.0:amd64...
 I: Configuring apt...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-VERBOSE [U=0,P=14567]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=14567]      main()                                    Iterating through file looking for sections matching: %runscript
+VERBOSE [U=0,P=9744]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=9744]       main()                                    Iterating through file looking for sections matching: %runscript
 [0mUser defined %runscript found! Taking priority.
 Adding files to container
-VERBOSE [U=0,P=14579]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=14579]      main()                                    Iterating through file looking for sections matching: %files
-[0mCopying '../docker-julia' to '/opt'
-Adding environment to container
-VERBOSE [U=0,P=14582]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=14582]      main()                                    Iterating through file looking for sections matching: %environment
-[0mRunning post scriptlet
-VERBOSE [U=0,P=14589]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=14589]      main()                                    Iterating through file looking for sections matching: %post
+VERBOSE [U=0,P=9756]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=9756]       main()                                    Iterating through file looking for sections matching: %files
+[0mCopying '../docker-julia' to '/usr/local/'
+Running post scriptlet
+VERBOSE [U=0,P=9765]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=9765]       main()                                    Iterating through file looking for sections matching: %post
 [0m+ echo Hello from inside the container
 Hello from inside the container
 + sed -i s/$/ universe/ /etc/apt/sources.list
@@ -700,7 +697,7 @@ Get:2 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1201 kB]
 Get:3 http://us.archive.ubuntu.com/ubuntu xenial/main Translation-en [568 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7532 kB]
 Get:5 http://us.archive.ubuntu.com/ubuntu xenial/universe Translation-en [4354 kB]
-Fetched 13.9 MB in 2s (6464 kB/s)
+Fetched 13.9 MB in 2s (5964 kB/s)
 Reading package lists...
 + apt-get -y install vim cmake python python-pip wget
 Reading package lists...
@@ -899,7 +896,7 @@ Get:126 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 rename all 0.20-4 
 Get:127 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-runtime all 2:7.4.1689-3ubuntu1 [5175 kB]
 Get:128 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim amd64 2:7.4.1689-3ubuntu1 [1008 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 107 MB in 13s (7686 kB/s)
+Fetched 107 MB in 4s (25.2 MB/s)
 Selecting previously unselected package libatm1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7174 files and directories currently installed.)
 Preparing to unpack .../libatm1_1%3a2.5.1-1.5_amd64.deb ...
@@ -1476,10 +1473,17 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 + wget -q -nc --no-check-certificate https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz
 + mkdir -p julia
 + tar -zxf julia-0.6.3-linux-x86_64.tar.gz -C julia --strip-components 1
-+ cd julia
++ cd ../
++ mv julia /usr/local/
++ echo export PATH="/usr/local/julia/bin:$PATH"
++ export JULIA_PKGDIR=/usr/local/julia/local/share/julia/site/
++ export PATH=/usr/local/julia/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
++ julia -e Pkg.init()
+INFO: Initializing package repository /usr/local/julia/local/share/julia/site/v0.6
+INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
 Adding runscript
-VERBOSE [U=0,P=20059]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=20059]      main()                                    Iterating through file looking for sections matching: %runscript
+VERBOSE [U=0,P=17116]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=17116]      main()                                    Iterating through file looking for sections matching: %runscript
 [0mFinalizing Singularity container
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1537,9 +1541,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-date' = 'Tue,_19_Jun_2018_12:44:17_-0500'
+DEBUG Adding label: 'org.label-schema.build-date' = 'Tue,_19_Jun_2018_15:59:01_-0500'
 DEBUG ADD org.label-schema.build-date from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-date is Tue,_19_Jun_2018_12:44:17_-0500
+DEBUG org.label-schema.build-date is Tue,_19_Jun_2018_15:59:01_-0500
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1628,9 +1632,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-size' = '1332MB'
+DEBUG Adding label: 'org.label-schema.build-size' = '1124MB'
 DEBUG ADD org.label-schema.build-size from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-size is 1332MB
+DEBUG org.label-schema.build-size is 1124MB
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
