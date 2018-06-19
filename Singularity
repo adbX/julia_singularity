@@ -10,10 +10,9 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     echo "Hello from inside the container"
     sed -i 's/$/ universe/' /etc/apt/sources.list
     apt-get update
-    apt-get -y install vim cmake python python-pip wget
+    apt-get -y install vim cmake python python-pip wget virtualenv
     apt-get clean
 
-    pip install matplotlib
     wget -q -nc --no-check-certificate https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz
     mkdir -p julia
     tar -zxf julia-0.6.3-linux-x86_64.tar.gz -C julia --strip-components 1
@@ -23,10 +22,15 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 	export JULIA_PKGDIR='/usr/local/julia/local/share/julia/site/'
 	export PATH="/usr/local/julia/bin:$PATH"
     julia -e 'Pkg.init()'
+
+	 mkdir /usr/local/venv-python
+	 virtualenv --no-site-packages /usr/local/venv-python/forjulia
+	 pip install matplotlib
 %files
     ../docker-julia /usr/local/
-#%environment
+%environment
 #	JULIA_LOAD_CACHE_PATH=/usr/local/julia/etc/julia/juliarc.jl
 #	JULIA_PKGDIR=/usr/local/julia/local/share/julia/site/
-#	PATH=$PATH:/usr/local/julia/bin
-#   export JULIA_LOAD_CACHE_PATH PATH JULIA_PKGDIR
+	PATH=$PATH:/usr/local/julia/bin
+	# export JULIA_LOAD_CACHE JULIA_PKGDIR
+	export PATH

@@ -3,190 +3,190 @@ Ending argument loop
 Singularity version: 2.5.1-master.gd6e81547
 Exec'ing: /usr/local/libexec/singularity/cli/build.exec
 Using container recipe deffile: Singularity
-VERBOSE [U=0,P=1204]       message_init()                            Set messagelevel to: 5
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
-[0mDEBUG   [U=0,P=1204]       singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow setuid = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key max loop devices = '256'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow pid ns = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config passwd = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config group = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key config resolv_conf = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount proc = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount sys = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount dev = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount devpts = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount home = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount tmp = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount hostfs = 'no'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key bind path = '/etc/localtime'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key bind path = '/etc/hosts'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key user bind control = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key enable overlay = 'try'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key mount slave = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key sessiondir max size = '16'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container squashfs = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container extfs = 'yes'
-[0mVERBOSE [U=0,P=1204]       singularity_config_parse()                Got config key allow container dir = 'yes'
-[0mDEBUG   [U=0,P=1204]       singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
-[0mVERBOSE [U=0,P=1204]       singularity_registry_init()               Initializing Singularity Registry
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.94tJ5O'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.94tJ5O) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.94tJ5O) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'HOME'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'TARGET_UID'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'TARGET_GID'
-[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Initializing user info
-[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Set the calling user's username to: root
-[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Marking uinfo structure as ready
-[0mDEBUG   [U=0,P=1204]       singularity_priv_init()                   Obtaining home directory
-[0mVERBOSE [U=0,P=1204]       singularity_priv_init()                   Set home (via getpwuid()) to: /root
-[0mINFO    [U=0,P=1204]       main()                                    Sanitizing environment
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LS_COLORS
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LANG
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: DISPLAY
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_GID
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: USERNAME
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_COMMAND
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: USER
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_version
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: PWD
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: HOME
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LC_CTYPE
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_USER
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SUDO_UID
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: MAIL
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: TERM
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SHELL
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SHLVL
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_bindir
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: LOGNAME
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: XAUTHORITY
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: PATH
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
-[0mDEBUG   [U=0,P=1204]       envclean()                                Unsetting environment variable: _
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
-[0mVERBOSE [U=0,P=1204]       main()                                    Instantiating writable container image object
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
-[0mDEBUG   [U=0,P=1204]       singularity_image_init()                  Calling image_init for each file system module
-[0mDEBUG   [U=0,P=1204]       singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.94tJ5O
-[0mDEBUG   [U=0,P=1204]       singularity_image_init()                  got image_init type for directory
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
-[0mDEBUG   [U=0,P=1204]       singularity_suid_enabled()                Executable is not SUID
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
-[0mDEBUG   [U=0,P=1204]       singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
-[0mDEBUG   [U=0,P=1204]       singularity_priv_escalate()               Running as root, not changing privileges
-[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Virtualizing FS namespace
-[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Virtualizing mount namespace
-[0mDEBUG   [U=0,P=1204]       singularity_priv_drop()                   Running as root, not changing privileges
-[0mDEBUG   [U=0,P=1204]       singularity_runtime_ns_mnt()              Making mounts slave
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=1204]       singularity_image_mount()                 Figuring out which mount module to use...
-[0mDEBUG   [U=0,P=1204]       singularity_image_mount()                 Calling dir_mount
-[0mDEBUG   [U=0,P=1204]       singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.94tJ5O->/usr/local/var/singularity/mnt/container
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=1204]       singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
-[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
-[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
-[0mVERBOSE [U=0,P=1204]       main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=1204]       envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
-[0mVERBOSE [U=0,P=1204]       envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=1204]       uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.94tJ5O'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.94tJ5O'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'NOTEST'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'BUILDSECTION'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'CACHEDIR'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning NULL on 'NOHTTPS'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
-[0mDEBUG   [U=0,P=1204]       singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'HOME' = '/root'
-[0mDEBUG   [U=0,P=1204]       envar_set()                               Setting environment variable: 'LANG' = 'C'
-[0mVERBOSE [U=0,P=1216]       message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=1216]       main()                                    Iterating through file looking for sections matching: %pre
+VERBOSE [U=0,P=16971]      message_init()                            Set messagelevel to: 5
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
+[0mDEBUG   [U=0,P=16971]      singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow setuid = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key max loop devices = '256'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow pid ns = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config passwd = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config group = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config resolv_conf = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount proc = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount sys = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount dev = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount devpts = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount home = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount tmp = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount hostfs = 'no'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key bind path = '/etc/localtime'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key bind path = '/etc/hosts'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key user bind control = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key enable overlay = 'try'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount slave = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key sessiondir max size = '16'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container squashfs = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container extfs = 'yes'
+[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container dir = 'yes'
+[0mDEBUG   [U=0,P=16971]      singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
+[0mVERBOSE [U=0,P=16971]      singularity_registry_init()               Initializing Singularity Registry
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.geCNig'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.geCNig) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.geCNig) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'HOME'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'TARGET_UID'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'TARGET_GID'
+[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Initializing user info
+[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Set the calling user's username to: root
+[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Marking uinfo structure as ready
+[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Obtaining home directory
+[0mVERBOSE [U=0,P=16971]      singularity_priv_init()                   Set home (via getpwuid()) to: /root
+[0mINFO    [U=0,P=16971]      main()                                    Sanitizing environment
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LS_COLORS
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LANG
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: DISPLAY
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_GID
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: USERNAME
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_COMMAND
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: USER
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_version
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: PWD
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: HOME
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LC_CTYPE
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_USER
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_UID
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: MAIL
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: TERM
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SHELL
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SHLVL
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_bindir
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LOGNAME
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: XAUTHORITY
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: PATH
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
+[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: _
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
+[0mVERBOSE [U=0,P=16971]      main()                                    Instantiating writable container image object
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
+[0mDEBUG   [U=0,P=16971]      singularity_image_init()                  Calling image_init for each file system module
+[0mDEBUG   [U=0,P=16971]      singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.geCNig
+[0mDEBUG   [U=0,P=16971]      singularity_image_init()                  got image_init type for directory
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
+[0mDEBUG   [U=0,P=16971]      singularity_suid_enabled()                Executable is not SUID
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
+[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
+[0mDEBUG   [U=0,P=16971]      singularity_priv_escalate()               Running as root, not changing privileges
+[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Virtualizing FS namespace
+[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Virtualizing mount namespace
+[0mDEBUG   [U=0,P=16971]      singularity_priv_drop()                   Running as root, not changing privileges
+[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Making mounts slave
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=16971]      singularity_image_mount()                 Figuring out which mount module to use...
+[0mDEBUG   [U=0,P=16971]      singularity_image_mount()                 Calling dir_mount
+[0mDEBUG   [U=0,P=16971]      singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.geCNig->/usr/local/var/singularity/mnt/container
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
+[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
+[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
+[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
+[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.geCNig'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'NOTEST'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'BUILDSECTION'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'CACHEDIR'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'NOHTTPS'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
+[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'HOME' = '/root'
+[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'LANG' = 'C'
+[0mVERBOSE [U=0,P=16988]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=16988]      main()                                    Iterating through file looking for sections matching: %pre
 [0mAdding base Singularity environment to container
 W: Cannot check Release signature; keyring file not available /usr/share/keyrings/ubuntu-archive-keyring.gpg
 I: Retrieving InRelease 
@@ -678,16 +678,19 @@ I: Configuring libapt-pkg5.0:amd64...
 I: Configuring apt...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-VERBOSE [U=0,P=9744]       message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=9744]       main()                                    Iterating through file looking for sections matching: %runscript
+VERBOSE [U=0,P=24940]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=24940]      main()                                    Iterating through file looking for sections matching: %runscript
 [0mUser defined %runscript found! Taking priority.
 Adding files to container
-VERBOSE [U=0,P=9756]       message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=9756]       main()                                    Iterating through file looking for sections matching: %files
+VERBOSE [U=0,P=24952]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=24952]      main()                                    Iterating through file looking for sections matching: %files
 [0mCopying '../docker-julia' to '/usr/local/'
-Running post scriptlet
-VERBOSE [U=0,P=9765]       message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=9765]       main()                                    Iterating through file looking for sections matching: %post
+Adding environment to container
+VERBOSE [U=0,P=24955]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=24955]      main()                                    Iterating through file looking for sections matching: %environment
+[0mRunning post scriptlet
+VERBOSE [U=0,P=24962]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=24962]      main()                                    Iterating through file looking for sections matching: %post
 [0m+ echo Hello from inside the container
 Hello from inside the container
 + sed -i s/$/ universe/ /etc/apt/sources.list
@@ -697,15 +700,15 @@ Get:2 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1201 kB]
 Get:3 http://us.archive.ubuntu.com/ubuntu xenial/main Translation-en [568 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7532 kB]
 Get:5 http://us.archive.ubuntu.com/ubuntu xenial/universe Translation-en [4354 kB]
-Fetched 13.9 MB in 2s (5964 kB/s)
+Fetched 13.9 MB in 2s (6488 kB/s)
 Reading package lists...
-+ apt-get -y install vim cmake python python-pip wget
++ apt-get -y install vim cmake python python-pip wget virtualenv
 Reading package lists...
 Building dependency tree...
 The following additional packages will be installed:
-  binutils build-essential bzip2 ca-certificates cmake-data cpp cpp-5 dpkg-dev
-  fakeroot file g++ g++-5 gcc gcc-5 ifupdown iproute2 isc-dhcp-client
-  isc-dhcp-common krb5-locales libalgorithm-diff-perl
+  binutils build-essential bzip2 ca-certificates cmake-data cpp cpp-5
+  dh-python dpkg-dev fakeroot file g++ g++-5 gcc gcc-5 ifupdown iproute2
+  isc-dhcp-client isc-dhcp-common krb5-locales libalgorithm-diff-perl
   libalgorithm-diff-xs-perl libalgorithm-merge-perl libarchive13 libasan2
   libasn1-8-heimdal libatm1 libatomic1 libc-dev-bin libc6-dev libcc1-0
   libcilkrts5 libcurl3 libdns-export162 libdpkg-perl libexpat1 libexpat1-dev
@@ -715,16 +718,18 @@ The following additional packages will be installed:
   libhx509-5-heimdal libicu55 libidn11 libisc-export160 libisl15 libitm1
   libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
   libkrb5support0 libldap-2.4-2 liblsan0 liblzo2-2 libmagic1 libmnl0 libmpc3
-  libmpfr4 libmpx0 libnettle6 libp11-kit0 libperl5.22 libpython-all-dev
-  libpython-dev libpython-stdlib libpython2.7 libpython2.7-dev
-  libpython2.7-minimal libpython2.7-stdlib libquadmath0 libroken18-heimdal
+  libmpdec2 libmpfr4 libmpx0 libnettle6 libp11-kit0 libperl5.22
+  libpython-all-dev libpython-dev libpython-stdlib libpython2.7
+  libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib
+  libpython3.5-minimal libpython3.5-stdlib libquadmath0 libroken18-heimdal
   librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
   libssl1.0.0 libstdc++-5-dev libtasn1-6 libtsan0 libubsan0 libwind0-heimdal
   libxml2 libxtables11 linux-libc-dev make manpages manpages-dev mime-support
   netbase openssl patch perl perl-modules-5.22 python-all python-all-dev
   python-dev python-minimal python-pip-whl python-pkg-resources
   python-setuptools python-wheel python2.7 python2.7-dev python2.7-minimal
-  rename sgml-base vim-common vim-runtime xml-core xz-utils
+  python3 python3-minimal python3-pkg-resources python3-virtualenv python3.5
+  python3.5-minimal rename sgml-base vim-common vim-runtime xml-core xz-utils
 Suggested packages:
   binutils-doc bzip2-doc codeblocks eclipse ninja-build cpp-doc gcc-5-locales
   debian-keyring g++-multilib g++-5-multilib gcc-5-doc libstdc++6-5-dbg
@@ -737,13 +742,14 @@ Suggested packages:
   libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
   libstdc++-5-doc make-doc man-browser ed diffutils-doc perl-doc
   libterm-readline-gnu-perl | libterm-readline-perl-perl python-doc python-tk
-  python-setuptools-doc python2.7-doc binfmt-support sgml-base-doc ctags
-  vim-doc vim-scripts vim-gnome-py2 | vim-gtk-py2 | vim-gtk3-py2
+  python-setuptools-doc python2.7-doc binfmt-support python3-doc python3-tk
+  python3-venv python3-setuptools python3.5-venv python3.5-doc sgml-base-doc
+  ctags vim-doc vim-scripts vim-gnome-py2 | vim-gtk-py2 | vim-gtk3-py2
   | vim-athena-py2 | vim-nox-py2 debhelper
 The following NEW packages will be installed:
   binutils build-essential bzip2 ca-certificates cmake cmake-data cpp cpp-5
-  dpkg-dev fakeroot file g++ g++-5 gcc gcc-5 ifupdown iproute2 isc-dhcp-client
-  isc-dhcp-common krb5-locales libalgorithm-diff-perl
+  dh-python dpkg-dev fakeroot file g++ g++-5 gcc gcc-5 ifupdown iproute2
+  isc-dhcp-client isc-dhcp-common krb5-locales libalgorithm-diff-perl
   libalgorithm-diff-xs-perl libalgorithm-merge-perl libarchive13 libasan2
   libasn1-8-heimdal libatm1 libatomic1 libc-dev-bin libc6-dev libcc1-0
   libcilkrts5 libcurl3 libdns-export162 libdpkg-perl libexpat1 libexpat1-dev
@@ -753,150 +759,164 @@ The following NEW packages will be installed:
   libhx509-5-heimdal libicu55 libidn11 libisc-export160 libisl15 libitm1
   libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
   libkrb5support0 libldap-2.4-2 liblsan0 liblzo2-2 libmagic1 libmnl0 libmpc3
-  libmpfr4 libmpx0 libnettle6 libp11-kit0 libperl5.22 libpython-all-dev
-  libpython-dev libpython-stdlib libpython2.7 libpython2.7-dev
-  libpython2.7-minimal libpython2.7-stdlib libquadmath0 libroken18-heimdal
+  libmpdec2 libmpfr4 libmpx0 libnettle6 libp11-kit0 libperl5.22
+  libpython-all-dev libpython-dev libpython-stdlib libpython2.7
+  libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib
+  libpython3.5-minimal libpython3.5-stdlib libquadmath0 libroken18-heimdal
   librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
   libssl1.0.0 libstdc++-5-dev libtasn1-6 libtsan0 libubsan0 libwind0-heimdal
   libxml2 libxtables11 linux-libc-dev make manpages manpages-dev mime-support
   netbase openssl patch perl perl-modules-5.22 python python-all
   python-all-dev python-dev python-minimal python-pip python-pip-whl
   python-pkg-resources python-setuptools python-wheel python2.7 python2.7-dev
-  python2.7-minimal rename sgml-base vim vim-common vim-runtime wget xml-core
-  xz-utils
-0 upgraded, 128 newly installed, 0 to remove and 0 not upgraded.
-Need to get 107 MB of archives.
-After this operation, 366 MB of additional disk space will be used.
+  python2.7-minimal python3 python3-minimal python3-pkg-resources
+  python3-virtualenv python3.5 python3.5-minimal rename sgml-base vim
+  vim-common vim-runtime virtualenv wget xml-core xz-utils
+0 upgraded, 140 newly installed, 0 to remove and 0 not upgraded.
+Need to get 112 MB of archives.
+After this operation, 390 MB of additional disk space will be used.
 Get:1 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libatm1 amd64 1:2.5.1-1.5 [24.2 kB]
 Get:2 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmnl0 amd64 1.0.3-5 [12.0 kB]
-Get:3 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgdbm3 amd64 1.8.3-13.1 [16.9 kB]
-Get:4 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 sgml-base all 1.26+nmu4ubuntu1 [12.5 kB]
-Get:5 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cmake-data all 3.5.1-1ubuntu1 [1121 kB]
-Get:6 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblzo2-2 amd64 2.08-1.2 [48.7 kB]
-Get:7 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libnettle6 amd64 3.2-1 [93.2 kB]
-Get:8 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libicu55 amd64 55.1-7 [7643 kB]
-Get:9 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libxml2 amd64 2.9.3+dfsg1-1 [696 kB]
-Get:10 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libarchive13 amd64 3.1.2-11build1 [263 kB]
-Get:11 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5support0 amd64 1.13.2+dfsg-5 [30.7 kB]
-Get:12 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libk5crypto3 amd64 1.13.2+dfsg-5 [81.0 kB]
-Get:13 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkeyutils1 amd64 1.5.9-8ubuntu1 [9904 B]
-Get:14 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5-3 amd64 1.13.2+dfsg-5 [273 kB]
-Get:15 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgssapi-krb5-2 amd64 1.13.2+dfsg-5 [120 kB]
-Get:16 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libidn11 amd64 1.32-3ubuntu1 [45.5 kB]
-Get:17 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgmp10 amd64 2:6.1.0+dfsg-2 [240 kB]
-Get:18 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhogweed4 amd64 3.2-1 [135 kB]
-Get:19 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
-Get:20 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libp11-kit0 amd64 0.23.2-3 [107 kB]
-Get:21 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libtasn1-6 amd64 4.7-3 [43.1 kB]
-Get:22 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgnutls30 amd64 3.4.10-4ubuntu1 [548 kB]
-Get:23 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [41.2 kB]
-Get:24 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [174 kB]
-Get:25 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [84.9 kB]
-Get:26 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [29.2 kB]
-Get:27 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [48.2 kB]
-Get:28 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [107 kB]
-Get:29 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1 [396 kB]
-Get:30 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [202 kB]
-Get:31 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [15.1 kB]
-Get:32 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [96.1 kB]
-Get:33 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14build1 [14.5 kB]
-Get:34 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14build1 [48.7 kB]
-Get:35 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3 [160 kB]
-Get:36 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1build1 [53.9 kB]
-Get:37 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4 [1121 kB]
-Get:38 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcurl3 amd64 7.47.0-1ubuntu2 [185 kB]
-Get:39 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libexpat1 amd64 2.1.0-7 [71.4 kB]
-Get:40 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libjsoncpp1 amd64 1.7.2-1 [73.0 kB]
-Get:41 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cmake amd64 3.5.1-1ubuntu1 [2623 kB]
-Get:42 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgpm2 amd64 1.20.4-6.1 [16.5 kB]
-Get:43 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl-modules-5.22 all 5.22.1-9 [2641 kB]
-Get:44 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libperl5.22 amd64 5.22.1-9 [3371 kB]
-Get:45 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl amd64 5.22.1-9 [237 kB]
-Get:46 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-minimal amd64 2.7.11-7ubuntu1 [335 kB]
-Get:47 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7-minimal amd64 2.7.11-7ubuntu1 [1288 kB]
-Get:48 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-minimal amd64 2.7.11-1 [28.2 kB]
-Get:49 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
-Get:50 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-stdlib amd64 2.7.11-7ubuntu1 [1852 kB]
-Get:51 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7 amd64 2.7.11-7ubuntu1 [220 kB]
-Get:52 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-stdlib amd64 2.7.11-1 [7656 B]
-Get:53 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python amd64 2.7.11-1 [137 kB]
-Get:54 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpfr4 amd64 3.1.4-1 [191 kB]
-Get:55 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
-Get:56 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 bzip2 amd64 1.0.6-8 [32.7 kB]
-Get:57 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmagic1 amd64 1:5.25-2ubuntu1 [216 kB]
-Get:58 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 file amd64 1:5.25-2ubuntu1 [21.2 kB]
-Get:59 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 iproute2 amd64 4.3.0-1ubuntu3 [522 kB]
-Get:60 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 ifupdown amd64 0.8.10ubuntu1 [54.9 kB]
-Get:61 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libisc-export160 amd64 1:9.10.3.dfsg.P4-8 [152 kB]
-Get:62 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libdns-export162 amd64 1:9.10.3.dfsg.P4-8 [664 kB]
-Get:63 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 isc-dhcp-client amd64 4.3.3-5ubuntu12 [222 kB]
-Get:64 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 isc-dhcp-common amd64 4.3.3-5ubuntu12 [104 kB]
-Get:65 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libxtables11 amd64 1.6.0-2ubuntu3 [27.2 kB]
-Get:66 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 netbase all 5.3 [12.9 kB]
-Get:67 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-common amd64 2:7.4.1689-3ubuntu1 [104 kB]
-Get:68 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 openssl amd64 1.0.2g-1ubuntu4 [492 kB]
-Get:69 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 ca-certificates all 20160104ubuntu1 [191 kB]
-Get:70 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 krb5-locales all 1.13.2+dfsg-5 [13.2 kB]
-Get:71 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules amd64 2.1.26.dfsg1-14build1 [47.5 kB]
-Get:72 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 manpages all 4.04-2 [1087 kB]
-Get:73 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 wget amd64 1.17.1-1ubuntu1 [297 kB]
-Get:74 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 xml-core all 0.13+nmu2 [23.3 kB]
-Get:75 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 binutils amd64 2.26-8ubuntu2 [2303 kB]
-Get:76 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libc-dev-bin amd64 2.23-0ubuntu3 [68.7 kB]
-Get:77 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 linux-libc-dev amd64 4.4.0-21.37 [830 kB]
-Get:78 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libc6-dev amd64 2.23-0ubuntu3 [2084 kB]
-Get:79 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
-Get:80 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cpp-5 amd64 5.3.1-14ubuntu2 [7788 kB]
-Get:81 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
-Get:82 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcc1-0 amd64 5.3.1-14ubuntu2 [38.8 kB]
-Get:83 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgomp1 amd64 5.3.1-14ubuntu2 [55.0 kB]
-Get:84 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libitm1 amd64 5.3.1-14ubuntu2 [27.4 kB]
-Get:85 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libatomic1 amd64 5.3.1-14ubuntu2 [8888 B]
-Get:86 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libasan2 amd64 5.3.1-14ubuntu2 [269 kB]
-Get:87 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblsan0 amd64 5.3.1-14ubuntu2 [110 kB]
-Get:88 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libtsan0 amd64 5.3.1-14ubuntu2 [248 kB]
-Get:89 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libubsan0 amd64 5.3.1-14ubuntu2 [100 kB]
-Get:90 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcilkrts5 amd64 5.3.1-14ubuntu2 [40.1 kB]
-Get:91 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpx0 amd64 5.3.1-14ubuntu2 [9762 B]
-Get:92 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libquadmath0 amd64 5.3.1-14ubuntu2 [131 kB]
-Get:93 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgcc-5-dev amd64 5.3.1-14ubuntu2 [2235 kB]
-Get:94 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 gcc-5 amd64 5.3.1-14ubuntu2 [8549 kB]
-Get:95 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
-Get:96 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libstdc++-5-dev amd64 5.3.1-14ubuntu2 [1427 kB]
-Get:97 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 g++-5 amd64 5.3.1-14ubuntu2 [8433 kB]
-Get:98 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1504 B]
-Get:99 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
-Get:100 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libdpkg-perl all 1.18.4ubuntu1 [195 kB]
-Get:101 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 xz-utils amd64 5.1.1alpha+20120614-2ubuntu2 [78.8 kB]
-Get:102 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 patch amd64 2.7.5-1 [90.4 kB]
-Get:103 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 dpkg-dev all 1.18.4ubuntu1 [584 kB]
-Get:104 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 build-essential amd64 12.1ubuntu2 [4758 B]
-Get:105 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libfakeroot amd64 1.20.2-1ubuntu1 [25.5 kB]
-Get:106 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 fakeroot amd64 1.20.2-1ubuntu1 [61.8 kB]
-Get:107 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-perl all 1.19.03-1 [47.6 kB]
-Get:108 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-xs-perl amd64 0.04-4build1 [11.0 kB]
-Get:109 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
-Get:110 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libexpat1-dev amd64 2.1.0-7 [115 kB]
-Get:111 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libfile-fcntllock-perl amd64 0.22-3 [32.0 kB]
-Get:112 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7 amd64 2.7.11-7ubuntu1 [1069 kB]
-Get:113 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-dev amd64 2.7.11-7ubuntu1 [27.8 MB]
-Get:114 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-dev amd64 2.7.11-1 [7728 B]
-Get:115 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-all-dev amd64 2.7.11-1 [992 B]
-Get:116 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
-Get:117 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-all amd64 2.7.11-1 [978 B]
-Get:118 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7-dev amd64 2.7.11-7ubuntu1 [280 kB]
-Get:119 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-dev amd64 2.7.11-1 [1160 B]
-Get:120 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-all-dev amd64 2.7.11-1 [1000 B]
-Get:121 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-pip-whl all 8.1.1-2 [1074 kB]
-Get:122 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-pip all 8.1.1-2 [144 kB]
-Get:123 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-pkg-resources all 20.7.0-1 [108 kB]
-Get:124 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
-Get:125 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-wheel all 0.29.0-1 [48.0 kB]
-Get:126 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 rename all 0.20-4 [12.0 kB]
-Get:127 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-runtime all 2:7.4.1689-3ubuntu1 [5175 kB]
-Get:128 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim amd64 2:7.4.1689-3ubuntu1 [1008 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4 [1121 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython3.5-minimal amd64 3.5.1-10 [521 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libexpat1 amd64 2.1.0-7 [71.4 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python3.5-minimal amd64 3.5.1-10 [1588 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python3-minimal amd64 3.5.1-3 [23.3 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpdec2 amd64 2.4.2-1 [82.6 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1 [396 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython3.5-stdlib amd64 3.5.1-10 [2117 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python3.5 amd64 3.5.1-10 [159 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython3-stdlib amd64 3.5.1-3 [6818 B]
+Get:15 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 dh-python all 2.20151103ubuntu1 [74.4 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python3 amd64 3.5.1-3 [8710 B]
+Get:17 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgdbm3 amd64 1.8.3-13.1 [16.9 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 sgml-base all 1.26+nmu4ubuntu1 [12.5 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cmake-data all 3.5.1-1ubuntu1 [1121 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblzo2-2 amd64 2.08-1.2 [48.7 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libnettle6 amd64 3.2-1 [93.2 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libicu55 amd64 55.1-7 [7643 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libxml2 amd64 2.9.3+dfsg1-1 [696 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libarchive13 amd64 3.1.2-11build1 [263 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5support0 amd64 1.13.2+dfsg-5 [30.7 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libk5crypto3 amd64 1.13.2+dfsg-5 [81.0 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkeyutils1 amd64 1.5.9-8ubuntu1 [9904 B]
+Get:28 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5-3 amd64 1.13.2+dfsg-5 [273 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgssapi-krb5-2 amd64 1.13.2+dfsg-5 [120 kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libidn11 amd64 1.32-3ubuntu1 [45.5 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgmp10 amd64 2:6.1.0+dfsg-2 [240 kB]
+Get:32 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhogweed4 amd64 3.2-1 [135 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libp11-kit0 amd64 0.23.2-3 [107 kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libtasn1-6 amd64 4.7-3 [43.1 kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgnutls30 amd64 3.4.10-4ubuntu1 [548 kB]
+Get:36 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [41.2 kB]
+Get:37 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [174 kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [84.9 kB]
+Get:39 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [29.2 kB]
+Get:40 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [48.2 kB]
+Get:41 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [107 kB]
+Get:42 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [202 kB]
+Get:43 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [15.1 kB]
+Get:44 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1 [96.1 kB]
+Get:45 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14build1 [14.5 kB]
+Get:46 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14build1 [48.7 kB]
+Get:47 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3 [160 kB]
+Get:48 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1build1 [53.9 kB]
+Get:49 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcurl3 amd64 7.47.0-1ubuntu2 [185 kB]
+Get:50 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libjsoncpp1 amd64 1.7.2-1 [73.0 kB]
+Get:51 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cmake amd64 3.5.1-1ubuntu1 [2623 kB]
+Get:52 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgpm2 amd64 1.20.4-6.1 [16.5 kB]
+Get:53 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl-modules-5.22 all 5.22.1-9 [2641 kB]
+Get:54 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libperl5.22 amd64 5.22.1-9 [3371 kB]
+Get:55 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl amd64 5.22.1-9 [237 kB]
+Get:56 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-minimal amd64 2.7.11-7ubuntu1 [335 kB]
+Get:57 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7-minimal amd64 2.7.11-7ubuntu1 [1288 kB]
+Get:58 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-minimal amd64 2.7.11-1 [28.2 kB]
+Get:59 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-stdlib amd64 2.7.11-7ubuntu1 [1852 kB]
+Get:60 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7 amd64 2.7.11-7ubuntu1 [220 kB]
+Get:61 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-stdlib amd64 2.7.11-1 [7656 B]
+Get:62 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python amd64 2.7.11-1 [137 kB]
+Get:63 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpfr4 amd64 3.1.4-1 [191 kB]
+Get:64 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:65 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 bzip2 amd64 1.0.6-8 [32.7 kB]
+Get:66 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmagic1 amd64 1:5.25-2ubuntu1 [216 kB]
+Get:67 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 file amd64 1:5.25-2ubuntu1 [21.2 kB]
+Get:68 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 iproute2 amd64 4.3.0-1ubuntu3 [522 kB]
+Get:69 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 ifupdown amd64 0.8.10ubuntu1 [54.9 kB]
+Get:70 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libisc-export160 amd64 1:9.10.3.dfsg.P4-8 [152 kB]
+Get:71 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libdns-export162 amd64 1:9.10.3.dfsg.P4-8 [664 kB]
+Get:72 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 isc-dhcp-client amd64 4.3.3-5ubuntu12 [222 kB]
+Get:73 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 isc-dhcp-common amd64 4.3.3-5ubuntu12 [104 kB]
+Get:74 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libxtables11 amd64 1.6.0-2ubuntu3 [27.2 kB]
+Get:75 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 netbase all 5.3 [12.9 kB]
+Get:76 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-common amd64 2:7.4.1689-3ubuntu1 [104 kB]
+Get:77 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 openssl amd64 1.0.2g-1ubuntu4 [492 kB]
+Get:78 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 ca-certificates all 20160104ubuntu1 [191 kB]
+Get:79 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 krb5-locales all 1.13.2+dfsg-5 [13.2 kB]
+Get:80 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules amd64 2.1.26.dfsg1-14build1 [47.5 kB]
+Get:81 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 manpages all 4.04-2 [1087 kB]
+Get:82 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 wget amd64 1.17.1-1ubuntu1 [297 kB]
+Get:83 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 xml-core all 0.13+nmu2 [23.3 kB]
+Get:84 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 binutils amd64 2.26-8ubuntu2 [2303 kB]
+Get:85 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libc-dev-bin amd64 2.23-0ubuntu3 [68.7 kB]
+Get:86 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 linux-libc-dev amd64 4.4.0-21.37 [830 kB]
+Get:87 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libc6-dev amd64 2.23-0ubuntu3 [2084 kB]
+Get:88 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:89 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cpp-5 amd64 5.3.1-14ubuntu2 [7788 kB]
+Get:90 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:91 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcc1-0 amd64 5.3.1-14ubuntu2 [38.8 kB]
+Get:92 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgomp1 amd64 5.3.1-14ubuntu2 [55.0 kB]
+Get:93 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libitm1 amd64 5.3.1-14ubuntu2 [27.4 kB]
+Get:94 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libatomic1 amd64 5.3.1-14ubuntu2 [8888 B]
+Get:95 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libasan2 amd64 5.3.1-14ubuntu2 [269 kB]
+Get:96 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblsan0 amd64 5.3.1-14ubuntu2 [110 kB]
+Get:97 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libtsan0 amd64 5.3.1-14ubuntu2 [248 kB]
+Get:98 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libubsan0 amd64 5.3.1-14ubuntu2 [100 kB]
+Get:99 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libcilkrts5 amd64 5.3.1-14ubuntu2 [40.1 kB]
+Get:100 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libmpx0 amd64 5.3.1-14ubuntu2 [9762 B]
+Get:101 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libquadmath0 amd64 5.3.1-14ubuntu2 [131 kB]
+Get:102 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgcc-5-dev amd64 5.3.1-14ubuntu2 [2235 kB]
+Get:103 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 gcc-5 amd64 5.3.1-14ubuntu2 [8549 kB]
+Get:104 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:105 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libstdc++-5-dev amd64 5.3.1-14ubuntu2 [1427 kB]
+Get:106 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 g++-5 amd64 5.3.1-14ubuntu2 [8433 kB]
+Get:107 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1504 B]
+Get:108 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
+Get:109 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libdpkg-perl all 1.18.4ubuntu1 [195 kB]
+Get:110 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 xz-utils amd64 5.1.1alpha+20120614-2ubuntu2 [78.8 kB]
+Get:111 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 patch amd64 2.7.5-1 [90.4 kB]
+Get:112 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 dpkg-dev all 1.18.4ubuntu1 [584 kB]
+Get:113 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 build-essential amd64 12.1ubuntu2 [4758 B]
+Get:114 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libfakeroot amd64 1.20.2-1ubuntu1 [25.5 kB]
+Get:115 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 fakeroot amd64 1.20.2-1ubuntu1 [61.8 kB]
+Get:116 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-perl all 1.19.03-1 [47.6 kB]
+Get:117 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-diff-xs-perl amd64 0.04-4build1 [11.0 kB]
+Get:118 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:119 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libexpat1-dev amd64 2.1.0-7 [115 kB]
+Get:120 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libfile-fcntllock-perl amd64 0.22-3 [32.0 kB]
+Get:121 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7 amd64 2.7.11-7ubuntu1 [1069 kB]
+Get:122 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython2.7-dev amd64 2.7.11-7ubuntu1 [27.8 MB]
+Get:123 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-dev amd64 2.7.11-1 [7728 B]
+Get:124 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-all-dev amd64 2.7.11-1 [992 B]
+Get:125 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Get:126 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-all amd64 2.7.11-1 [978 B]
+Get:127 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python2.7-dev amd64 2.7.11-7ubuntu1 [280 kB]
+Get:128 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-dev amd64 2.7.11-1 [1160 B]
+Get:129 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-all-dev amd64 2.7.11-1 [1000 B]
+Get:130 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-pip-whl all 8.1.1-2 [1074 kB]
+Get:131 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-pip all 8.1.1-2 [144 kB]
+Get:132 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-pkg-resources all 20.7.0-1 [108 kB]
+Get:133 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
+Get:134 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-wheel all 0.29.0-1 [48.0 kB]
+Get:135 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python3-pkg-resources all 20.7.0-1 [79.0 kB]
+Get:136 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-virtualenv all 15.0.1+ds-3 [43.3 kB]
+Get:137 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 rename all 0.20-4 [12.0 kB]
+Get:138 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-runtime all 2:7.4.1689-3ubuntu1 [5175 kB]
+Get:139 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim amd64 2:7.4.1689-3ubuntu1 [1008 kB]
+Get:140 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 virtualenv all 15.0.1+ds-3 [4342 B]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 107 MB in 4s (25.2 MB/s)
+Fetched 112 MB in 4s (24.5 MB/s)
 Selecting previously unselected package libatm1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7174 files and directories currently installed.)
 Preparing to unpack .../libatm1_1%3a2.5.1-1.5_amd64.deb ...
@@ -904,6 +924,56 @@ Unpacking libatm1:amd64 (1:2.5.1-1.5) ...
 Selecting previously unselected package libmnl0:amd64.
 Preparing to unpack .../libmnl0_1.0.3-5_amd64.deb ...
 Unpacking libmnl0:amd64 (1.0.3-5) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4) ...
+Selecting previously unselected package libpython3.5-minimal:amd64.
+Preparing to unpack .../libpython3.5-minimal_3.5.1-10_amd64.deb ...
+Unpacking libpython3.5-minimal:amd64 (3.5.1-10) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-7_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-7) ...
+Selecting previously unselected package python3.5-minimal.
+Preparing to unpack .../python3.5-minimal_3.5.1-10_amd64.deb ...
+Unpacking python3.5-minimal (3.5.1-10) ...
+Selecting previously unselected package python3-minimal.
+Preparing to unpack .../python3-minimal_3.5.1-3_amd64.deb ...
+Unpacking python3-minimal (3.5.1-3) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
+Unpacking mime-support (3.59ubuntu1) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-4) ...
+Selecting previously unselected package libmpdec2:amd64.
+Preparing to unpack .../libmpdec2_2.4.2-1_amd64.deb ...
+Unpacking libmpdec2:amd64 (2.4.2-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Selecting previously unselected package libpython3.5-stdlib:amd64.
+Preparing to unpack .../libpython3.5-stdlib_3.5.1-10_amd64.deb ...
+Unpacking libpython3.5-stdlib:amd64 (3.5.1-10) ...
+Selecting previously unselected package python3.5.
+Preparing to unpack .../python3.5_3.5.1-10_amd64.deb ...
+Unpacking python3.5 (3.5.1-10) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../libpython3-stdlib_3.5.1-3_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.5.1-3) ...
+Selecting previously unselected package dh-python.
+Preparing to unpack .../dh-python_2.20151103ubuntu1_all.deb ...
+Unpacking dh-python (2.20151103ubuntu1) ...
+Processing triggers for libc-bin (2.23-0ubuntu3) ...
+Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4) ...
+Setting up libpython3.5-minimal:amd64 (3.5.1-10) ...
+Setting up libexpat1:amd64 (2.1.0-7) ...
+Setting up python3.5-minimal (3.5.1-10) ...
+Setting up python3-minimal (3.5.1-3) ...
+Processing triggers for libc-bin (2.23-0ubuntu3) ...
+Selecting previously unselected package python3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8165 files and directories currently installed.)
+Preparing to unpack .../python3_3.5.1-3_amd64.deb ...
+Unpacking python3 (3.5.1-3) ...
 Selecting previously unselected package libgdbm3:amd64.
 Preparing to unpack .../libgdbm3_1.8.3-13.1_amd64.deb ...
 Unpacking libgdbm3:amd64 (1.8.3-13.1) ...
@@ -952,9 +1022,6 @@ Unpacking libgmp10:amd64 (2:6.1.0+dfsg-2) ...
 Selecting previously unselected package libhogweed4:amd64.
 Preparing to unpack .../libhogweed4_3.2-1_amd64.deb ...
 Unpacking libhogweed4:amd64 (3.2-1) ...
-Selecting previously unselected package libffi6:amd64.
-Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
-Unpacking libffi6:amd64 (3.2.1-4) ...
 Selecting previously unselected package libp11-kit0:amd64.
 Preparing to unpack .../libp11-kit0_0.23.2-3_amd64.deb ...
 Unpacking libp11-kit0:amd64 (0.23.2-3) ...
@@ -982,9 +1049,6 @@ Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Selecting previously unselected package libhx509-5-heimdal:amd64.
 Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...
 Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
-Selecting previously unselected package libsqlite3-0:amd64.
-Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...
-Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
 Selecting previously unselected package libkrb5-26-heimdal:amd64.
 Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1_amd64.deb ...
 Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
@@ -1006,15 +1070,9 @@ Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3) ...
 Selecting previously unselected package librtmp1:amd64.
 Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1build1_amd64.deb ...
 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1build1) ...
-Selecting previously unselected package libssl1.0.0:amd64.
-Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4_amd64.deb ...
-Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4) ...
 Selecting previously unselected package libcurl3:amd64.
 Preparing to unpack .../libcurl3_7.47.0-1ubuntu2_amd64.deb ...
 Unpacking libcurl3:amd64 (7.47.0-1ubuntu2) ...
-Selecting previously unselected package libexpat1:amd64.
-Preparing to unpack .../libexpat1_2.1.0-7_amd64.deb ...
-Unpacking libexpat1:amd64 (2.1.0-7) ...
 Selecting previously unselected package libjsoncpp1:amd64.
 Preparing to unpack .../libjsoncpp1_1.7.2-1_amd64.deb ...
 Unpacking libjsoncpp1:amd64 (1.7.2-1) ...
@@ -1042,9 +1100,6 @@ Unpacking python2.7-minimal (2.7.11-7ubuntu1) ...
 Selecting previously unselected package python-minimal.
 Preparing to unpack .../python-minimal_2.7.11-1_amd64.deb ...
 Unpacking python-minimal (2.7.11-1) ...
-Selecting previously unselected package mime-support.
-Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
-Unpacking mime-support (3.59ubuntu1) ...
 Selecting previously unselected package libpython2.7-stdlib:amd64.
 Preparing to unpack .../libpython2.7-stdlib_2.7.11-7ubuntu1_amd64.deb ...
 Unpacking libpython2.7-stdlib:amd64 (2.7.11-7ubuntu1) ...
@@ -1059,7 +1114,7 @@ Setting up libpython2.7-minimal:amd64 (2.7.11-7ubuntu1) ...
 Setting up python2.7-minimal (2.7.11-7ubuntu1) ...
 Setting up python-minimal (2.7.11-1) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 12092 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13026 files and directories currently installed.)
 Preparing to unpack .../python_2.7.11-1_amd64.deb ...
 Unpacking python (2.7.11-1) ...
 Selecting previously unselected package libmpfr4:amd64.
@@ -1278,6 +1333,12 @@ Unpacking python-setuptools (20.7.0-1) ...
 Selecting previously unselected package python-wheel.
 Preparing to unpack .../python-wheel_0.29.0-1_all.deb ...
 Unpacking python-wheel (0.29.0-1) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../python3-pkg-resources_20.7.0-1_all.deb ...
+Unpacking python3-pkg-resources (20.7.0-1) ...
+Selecting previously unselected package python3-virtualenv.
+Preparing to unpack .../python3-virtualenv_15.0.1+ds-3_all.deb ...
+Unpacking python3-virtualenv (15.0.1+ds-3) ...
 Selecting previously unselected package rename.
 Preparing to unpack .../archives/rename_0.20-4_all.deb ...
 Unpacking rename (0.20-4) ...
@@ -1289,10 +1350,20 @@ Unpacking vim-runtime (2:7.4.1689-3ubuntu1) ...
 Selecting previously unselected package vim.
 Preparing to unpack .../vim_2%3a7.4.1689-3ubuntu1_amd64.deb ...
 Unpacking vim (2:7.4.1689-3ubuntu1) ...
+Selecting previously unselected package virtualenv.
+Preparing to unpack .../virtualenv_15.0.1+ds-3_all.deb ...
+Unpacking virtualenv (15.0.1+ds-3) ...
 Processing triggers for libc-bin (2.23-0ubuntu3) ...
 Processing triggers for systemd (229-4ubuntu4) ...
 Setting up libatm1:amd64 (1:2.5.1-1.5) ...
 Setting up libmnl0:amd64 (1.0.3-5) ...
+Setting up mime-support (3.59ubuntu1) ...
+Setting up libffi6:amd64 (3.2.1-4) ...
+Setting up libmpdec2:amd64 (2.4.2-1) ...
+Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Setting up libpython3.5-stdlib:amd64 (3.5.1-10) ...
+Setting up python3.5 (3.5.1-10) ...
+Setting up libpython3-stdlib:amd64 (3.5.1-3) ...
 Setting up libgdbm3:amd64 (1.8.3-13.1) ...
 Setting up sgml-base (1.26+nmu4ubuntu1) ...
 Setting up cmake-data (3.5.1-1ubuntu1) ...
@@ -1309,7 +1380,6 @@ Setting up libgssapi-krb5-2:amd64 (1.13.2+dfsg-5) ...
 Setting up libidn11:amd64 (1.32-3ubuntu1) ...
 Setting up libgmp10:amd64 (2:6.1.0+dfsg-2) ...
 Setting up libhogweed4:amd64 (3.2-1) ...
-Setting up libffi6:amd64 (3.2.1-4) ...
 Setting up libp11-kit0:amd64 (0.23.2-3) ...
 Setting up libtasn1-6:amd64 (4.7-3) ...
 Setting up libgnutls30:amd64 (3.4.10-4ubuntu1) ...
@@ -1319,7 +1389,6 @@ Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
-Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
 Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
 Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1) ...
@@ -1327,9 +1396,7 @@ Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...
 Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...
 Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3) ...
 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1build1) ...
-Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4) ...
 Setting up libcurl3:amd64 (7.47.0-1ubuntu2) ...
-Setting up libexpat1:amd64 (2.1.0-7) ...
 Setting up libjsoncpp1:amd64 (1.7.2-1) ...
 Setting up cmake (3.5.1-1ubuntu1) ...
 Setting up libgpm2:amd64 (1.20.4-6.1) ...
@@ -1337,7 +1404,6 @@ Setting up perl-modules-5.22 (5.22.1-9) ...
 Setting up libperl5.22:amd64 (5.22.1-9) ...
 Setting up perl (5.22.1-9) ...
 update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode
-Setting up mime-support (3.59ubuntu1) ...
 Setting up libpython2.7-stdlib:amd64 (2.7.11-7ubuntu1) ...
 Setting up python2.7 (2.7.11-7ubuntu1) ...
 Setting up libpython-stdlib:amd64 (2.7.11-1) ...
@@ -1430,6 +1496,11 @@ update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in aut
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor (editor) in auto mode
+Setting up dh-python (2.20151103ubuntu1) ...
+Setting up python3 (3.5.1-3) ...
+Setting up python3-pkg-resources (20.7.0-1) ...
+Setting up python3-virtualenv (15.0.1+ds-3) ...
+Setting up virtualenv (15.0.1+ds-3) ...
 Processing triggers for libc-bin (2.23-0ubuntu3) ...
 Processing triggers for systemd (229-4ubuntu4) ...
 Processing triggers for ca-certificates (20160104ubuntu1) ...
@@ -1439,6 +1510,23 @@ Running hooks in /etc/ca-certificates/update.d...
 done.
 Processing triggers for sgml-base (1.26+nmu4ubuntu1) ...
 + apt-get clean
++ wget -q -nc --no-check-certificate https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz
++ mkdir -p julia
++ tar -zxf julia-0.6.3-linux-x86_64.tar.gz -C julia --strip-components 1
++ cd ../
++ mv julia /usr/local/
++ echo export PATH="/usr/local/julia/bin:$PATH"
++ export JULIA_PKGDIR=/usr/local/julia/local/share/julia/site/
++ export PATH=/usr/local/julia/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
++ julia -e Pkg.init()
+INFO: Initializing package repository /usr/local/julia/local/share/julia/site/v0.6
+INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
++ mkdir /usr/local/venv-python
++ virtualenv --no-site-packages /usr/local/venv-python/forjulia
+New python executable in /usr/local/venv-python/forjulia/bin/python2
+Also creating executable in /usr/local/venv-python/forjulia/bin/python
+Installing setuptools, pkg_resources, pip, wheel...done.
+Running virtualenv with interpreter /bin/python2
 + pip install matplotlib
 Collecting matplotlib
   Downloading https://files.pythonhosted.org/packages/33/da/6409d32c46778ed20308e83bc501ff2ff8a9cbda5dd7b26362c5e99a6149/matplotlib-2.2.2-cp27-cp27mu-manylinux1_x86_64.whl (12.6MB)
@@ -1470,20 +1558,9 @@ Installing collected packages: numpy, six, cycler, kiwisolver, python-dateutil, 
 Successfully installed backports.functools-lru-cache-1.5 cycler-0.10.0 kiwisolver-1.0.1 matplotlib-2.2.2 numpy-1.14.5 pyparsing-2.2.0 python-dateutil-2.7.3 pytz-2018.4 six-1.11.0 subprocess32-3.5.2
 You are using pip version 8.1.1, however version 10.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
-+ wget -q -nc --no-check-certificate https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz
-+ mkdir -p julia
-+ tar -zxf julia-0.6.3-linux-x86_64.tar.gz -C julia --strip-components 1
-+ cd ../
-+ mv julia /usr/local/
-+ echo export PATH="/usr/local/julia/bin:$PATH"
-+ export JULIA_PKGDIR=/usr/local/julia/local/share/julia/site/
-+ export PATH=/usr/local/julia/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-+ julia -e Pkg.init()
-INFO: Initializing package repository /usr/local/julia/local/share/julia/site/v0.6
-INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
 Adding runscript
-VERBOSE [U=0,P=17116]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=17116]      main()                                    Iterating through file looking for sections matching: %runscript
+VERBOSE [U=0,P=31608]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=31608]      main()                                    Iterating through file looking for sections matching: %runscript
 [0mFinalizing Singularity container
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1541,9 +1618,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-date' = 'Tue,_19_Jun_2018_15:59:01_-0500'
+DEBUG Adding label: 'org.label-schema.build-date' = 'Tue,_19_Jun_2018_17:42:11_-0500'
 DEBUG ADD org.label-schema.build-date from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-date is Tue,_19_Jun_2018_15:59:01_-0500
+DEBUG org.label-schema.build-date is Tue,_19_Jun_2018_17:42:11_-0500
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1632,9 +1709,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-size' = '1124MB'
+DEBUG Adding label: 'org.label-schema.build-size' = '1173MB'
 DEBUG ADD org.label-schema.build-size from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-size is 1124MB
+DEBUG org.label-schema.build-size is 1173MB
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
