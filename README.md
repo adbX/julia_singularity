@@ -9,3 +9,5 @@ to build the image
 
 3) View the results:
 `cat /usr/local/data/results.txt`
+
+Notes: Any output/issues with the build can be view at: `cat sing-build.output`
