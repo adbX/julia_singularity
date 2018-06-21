@@ -3,11 +3,8 @@ OSVersion: xenial
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %runscript
-    echo "This is what happens when you run the container..."
-
 
 %post
-    echo "Hello from inside the container"
     sed -i 's/$/ universe/' /etc/apt/sources.list
     apt-get update
     apt-get -y install vim cmake python python-pip wget virtualenv
@@ -26,8 +23,11 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 	 mkdir /usr/local/venv-python
 	 virtualenv --no-site-packages /usr/local/venv-python/forjulia
 	 pip install matplotlib
+	 julia /usr/local/data/examples/runfirst.jl
+     julia -e 'Pkg.build("PyCall")'
+     julia /usr/local/data/examples/runExperiments.jl | tee /usr/local/data/results.txt
 %files
-    ../docker-julia /usr/local/
+    ./data /usr/local/
 %environment
 #	JULIA_LOAD_CACHE_PATH=/usr/local/julia/etc/julia/juliarc.jl
 #	JULIA_PKGDIR=/usr/local/julia/local/share/julia/site/

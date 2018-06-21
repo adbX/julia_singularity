@@ -3,190 +3,190 @@ Ending argument loop
 Singularity version: 2.5.1-master.gd6e81547
 Exec'ing: /usr/local/libexec/singularity/cli/build.exec
 Using container recipe deffile: Singularity
-VERBOSE [U=0,P=16971]      message_init()                            Set messagelevel to: 5
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
-[0mDEBUG   [U=0,P=16971]      singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow setuid = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key max loop devices = '256'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow pid ns = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config passwd = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config group = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key config resolv_conf = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount proc = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount sys = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount dev = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount devpts = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount home = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount tmp = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount hostfs = 'no'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key bind path = '/etc/localtime'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key bind path = '/etc/hosts'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key user bind control = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key enable overlay = 'try'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key mount slave = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key sessiondir max size = '16'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container squashfs = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container extfs = 'yes'
-[0mVERBOSE [U=0,P=16971]      singularity_config_parse()                Got config key allow container dir = 'yes'
-[0mDEBUG   [U=0,P=16971]      singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
-[0mVERBOSE [U=0,P=16971]      singularity_registry_init()               Initializing Singularity Registry
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.geCNig'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.geCNig) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.geCNig) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'HOME'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'TARGET_UID'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'TARGET_GID'
-[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Initializing user info
-[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Set the calling user's username to: root
-[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Marking uinfo structure as ready
-[0mDEBUG   [U=0,P=16971]      singularity_priv_init()                   Obtaining home directory
-[0mVERBOSE [U=0,P=16971]      singularity_priv_init()                   Set home (via getpwuid()) to: /root
-[0mINFO    [U=0,P=16971]      main()                                    Sanitizing environment
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LS_COLORS
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LANG
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: DISPLAY
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_GID
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: USERNAME
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_COMMAND
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: USER
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_version
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: PWD
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: HOME
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LC_CTYPE
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_USER
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SUDO_UID
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: MAIL
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: TERM
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SHELL
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SHLVL
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_bindir
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: LOGNAME
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: XAUTHORITY
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: PATH
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
-[0mDEBUG   [U=0,P=16971]      envclean()                                Unsetting environment variable: _
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
-[0mVERBOSE [U=0,P=16971]      main()                                    Instantiating writable container image object
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
-[0mDEBUG   [U=0,P=16971]      singularity_image_init()                  Calling image_init for each file system module
-[0mDEBUG   [U=0,P=16971]      singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.geCNig
-[0mDEBUG   [U=0,P=16971]      singularity_image_init()                  got image_init type for directory
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
-[0mDEBUG   [U=0,P=16971]      singularity_suid_enabled()                Executable is not SUID
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
-[0mDEBUG   [U=0,P=16971]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
-[0mDEBUG   [U=0,P=16971]      singularity_priv_escalate()               Running as root, not changing privileges
-[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Virtualizing FS namespace
-[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Virtualizing mount namespace
-[0mDEBUG   [U=0,P=16971]      singularity_priv_drop()                   Running as root, not changing privileges
-[0mDEBUG   [U=0,P=16971]      singularity_runtime_ns_mnt()              Making mounts slave
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
-[0mDEBUG   [U=0,P=16971]      singularity_image_mount()                 Figuring out which mount module to use...
-[0mDEBUG   [U=0,P=16971]      singularity_image_mount()                 Calling dir_mount
-[0mDEBUG   [U=0,P=16971]      singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.geCNig->/usr/local/var/singularity/mnt/container
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
-[0mVERBOSE [U=0,P=16971]      singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
-[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
-[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
-[0mVERBOSE [U=0,P=16971]      main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=16971]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
-[0mVERBOSE [U=0,P=16971]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=16971]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.geCNig'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.geCNig'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'NOTEST'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'BUILDSECTION'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'CACHEDIR'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning NULL on 'NOHTTPS'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
-[0mDEBUG   [U=0,P=16971]      singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'HOME' = '/root'
-[0mDEBUG   [U=0,P=16971]      envar_set()                               Setting environment variable: 'LANG' = 'C'
-[0mVERBOSE [U=0,P=16988]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=16988]      main()                                    Iterating through file looking for sections matching: %pre
+VERBOSE [U=0,P=25678]      message_init()                            Set messagelevel to: 5
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Initialize configuration file: /etc/singularity/singularity.conf
+[0mDEBUG   [U=0,P=25678]      singularity_config_parse()                Starting parse of configuration file /etc/singularity/singularity.conf
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key allow setuid = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key max loop devices = '256'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key allow pid ns = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key config passwd = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key config group = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key config resolv_conf = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount proc = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount sys = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount dev = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount devpts = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount home = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount tmp = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount hostfs = 'no'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key bind path = '/etc/localtime'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key bind path = '/etc/hosts'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key user bind control = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key enable overlay = 'try'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key mount slave = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key sessiondir max size = '16'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key allow container squashfs = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key allow container extfs = 'yes'
+[0mVERBOSE [U=0,P=25678]      singularity_config_parse()                Got config key allow container dir = 'yes'
+[0mDEBUG   [U=0,P=25678]      singularity_config_parse()                Finished parsing configuration file '/etc/singularity/singularity.conf'
+[0mVERBOSE [U=0,P=25678]      singularity_registry_init()               Initializing Singularity Registry
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'COMMAND' = 'build'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(COMMAND, build) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'SYSCONFDIR' = '/etc'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(sysconfdir, /etc) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(BUILDDEF, Singularity) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'ROOTFS' = '/tmp/.singularity-build.bO9H8L'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(ROOTFS, /tmp/.singularity-build.bO9H8L) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(version, 2.5.1-master.gd6e81547) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(CHECKLEVEL, 3) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'IMAGE' = '/tmp/.singularity-build.bO9H8L'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(IMAGE, /tmp/.singularity-build.bO9H8L) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(MESSAGELEVEL, 5) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'BINDIR' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(bindir, /usr/local/bin) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(CHECKTAGS, bootstrap) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(CHECKS, no) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'LOCALSTATEDIR' = '/usr/local/var'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(localstatedir, /usr/local/var) = 0
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'LIBEXECDIR' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(libexecdir, /usr/local/libexec) = 0
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'HOME'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'TARGET_UID'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'TARGET_GID'
+[0mDEBUG   [U=0,P=25678]      singularity_priv_init()                   Initializing user info
+[0mDEBUG   [U=0,P=25678]      singularity_priv_init()                   Set the calling user's username to: root
+[0mDEBUG   [U=0,P=25678]      singularity_priv_init()                   Marking uinfo structure as ready
+[0mDEBUG   [U=0,P=25678]      singularity_priv_init()                   Obtaining home directory
+[0mVERBOSE [U=0,P=25678]      singularity_priv_init()                   Set home (via getpwuid()) to: /root
+[0mINFO    [U=0,P=25678]      main()                                    Sanitizing environment
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_COMMAND
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: LS_COLORS
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_sysconfdir
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_BUILDDEF
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: LANG
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: DISPLAY
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SUDO_GID
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: USERNAME
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SUDO_COMMAND
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: USER
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_ROOTFS
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_version
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: PWD
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: HOME
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: LC_CTYPE
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SUDO_USER
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKLEVEL
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_IMAGE
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SUDO_UID
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: MAIL
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: TERM
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SHELL
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_MESSAGELEVEL
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SHLVL
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_bindir
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: LOGNAME
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: XAUTHORITY
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKTAGS
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_CHECKS
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: PATH
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_localstatedir
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: SINGULARITY_libexecdir
+[0mDEBUG   [U=0,P=25678]      envclean()                                Unsetting environment variable: _
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'WRITABLE' = '1'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(WRITABLE, 1) = 0
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'WRITABLE' = '1'
+[0mVERBOSE [U=0,P=25678]      main()                                    Instantiating writable container image object
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.bO9H8L'
+[0mDEBUG   [U=0,P=25678]      singularity_image_init()                  Calling image_init for each file system module
+[0mDEBUG   [U=0,P=25678]      singularity_image_dir_init()              Opening file descriptor to directory: /tmp/.singularity-build.bO9H8L
+[0mDEBUG   [U=0,P=25678]      singularity_image_init()                  got image_init type for directory
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(allow container dir, yes)
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_value_impl()       Returning configuration value allow container dir='yes'
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(allow container dir, yes) = 1
+[0mDEBUG   [U=0,P=25678]      singularity_suid_enabled()                Executable is not SUID
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=25678]      singularity_runtime_ns()                  Calling: _singularity_runtime_ns_mnt()
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_bool_char_impl()   Called singularity_config_get_bool(mount slave, yes)
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_value_impl()       Returning configuration value mount slave='yes'
+[0mDEBUG   [U=0,P=25678]      singularity_config_get_bool_char_impl()   Return singularity_config_get_bool(mount slave, yes) = 1
+[0mDEBUG   [U=0,P=25678]      singularity_priv_escalate()               Running as root, not changing privileges
+[0mDEBUG   [U=0,P=25678]      singularity_runtime_ns_mnt()              Virtualizing FS namespace
+[0mDEBUG   [U=0,P=25678]      singularity_runtime_ns_mnt()              Virtualizing mount namespace
+[0mDEBUG   [U=0,P=25678]      singularity_priv_drop()                   Running as root, not changing privileges
+[0mDEBUG   [U=0,P=25678]      singularity_runtime_ns_mnt()              Making mounts slave
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'DAEMON_JOIN'
+[0mDEBUG   [U=0,P=25678]      singularity_image_mount()                 Figuring out which mount module to use...
+[0mDEBUG   [U=0,P=25678]      singularity_image_mount()                 Calling dir_mount
+[0mDEBUG   [U=0,P=25678]      singularity_image_dir_mount()             Mounting container directory /tmp/.singularity-build.bO9H8L->/usr/local/var/singularity/mnt/container
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mVERBOSE [U=0,P=25678]      main()                                    Got bootstrap definition key/val 'Bootstrap' = 'debootstrap'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=25678]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=25678]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_BOOTSTRAP
+[0mVERBOSE [U=0,P=25678]      singularity_registry_set()                Adding value to registry: 'DRIVER' = 'debootstrap'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_set()                Returning singularity_registry_set(DRIVER, debootstrap) = 0
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'BOOTSTRAP' = 'debootstrap'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'Bootstrap' -> 'BOOTSTRAP'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_BOOTSTRAP' = 'debootstrap'
+[0mVERBOSE [U=0,P=25678]      main()                                    Got bootstrap definition key/val 'OSVersion' = 'xenial'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=25678]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_OSVERSION
+[0mVERBOSE [U=0,P=25678]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_OSVERSION
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'OSVERSION' = 'xenial'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'OSVersion' -> 'OSVERSION'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_OSVERSION' = 'xenial'
+[0mVERBOSE [U=0,P=25678]      main()                                    Got bootstrap definition key/val 'MirrorURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=25678]      envar_defined()                           Checking if environment variable is defined: SINGULARITY_DEFFILE_MIRRORURL
+[0mVERBOSE [U=0,P=25678]      envar_defined()                           Environment variable is undefined: SINGULARITY_DEFFILE_MIRRORURL
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=25678]      uppercase()                               Transformed to uppercase: 'MirrorURL' -> 'MIRRORURL'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_DEFFILE_MIRRORURL' = 'http://us.archive.ubuntu.com/ubuntu/'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'PATH' = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_ROOTFS' = '/usr/local/var/singularity/mnt/container'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_libexecdir' = '/usr/local/libexec'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_bindir' = '/usr/local/bin'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'IMAGE' = '/tmp/.singularity-build.bO9H8L'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_IMAGE' = '/tmp/.singularity-build.bO9H8L'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_BUILDDEF' = 'Singularity'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'CHECKS' = 'no'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKS' = 'no'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKLEVEL' = '3'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_CHECKTAGS' = 'bootstrap'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_MESSAGELEVEL' = '5'
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'NOTEST'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_NOTEST
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'BUILDSECTION'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDSECTION
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'BUILDNOBASE'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_BUILDNOBASE
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'DOCKER_PASSWORD'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_PASSWORD
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'DOCKER_USERNAME'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_DOCKER_USERNAME
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'CACHEDIR'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_CACHEDIR
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning NULL on 'NOHTTPS'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Unsetting environment variable: SINGULARITY_NOHTTPS
+[0mDEBUG   [U=0,P=25678]      singularity_registry_get()                Returning value from registry: 'VERSION' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'SINGULARITY_version' = '2.5.1-master.gd6e81547'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'HOME' = '/root'
+[0mDEBUG   [U=0,P=25678]      envar_set()                               Setting environment variable: 'LANG' = 'C'
+[0mVERBOSE [U=0,P=25690]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=25690]      main()                                    Iterating through file looking for sections matching: %pre
 [0mAdding base Singularity environment to container
 W: Cannot check Release signature; keyring file not available /usr/share/keyrings/ubuntu-archive-keyring.gpg
 I: Retrieving InRelease 
@@ -678,29 +678,26 @@ I: Configuring libapt-pkg5.0:amd64...
 I: Configuring apt...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-VERBOSE [U=0,P=24940]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=24940]      main()                                    Iterating through file looking for sections matching: %runscript
-[0mUser defined %runscript found! Taking priority.
-Adding files to container
-VERBOSE [U=0,P=24952]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=24952]      main()                                    Iterating through file looking for sections matching: %files
-[0mCopying '../docker-julia' to '/usr/local/'
+VERBOSE [U=0,P=3895]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=3895]       main()                                    Iterating through file looking for sections matching: %runscript
+[0mAdding files to container
+VERBOSE [U=0,P=3907]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=3907]       main()                                    Iterating through file looking for sections matching: %files
+[0mCopying './data' to '/usr/local/'
 Adding environment to container
-VERBOSE [U=0,P=24955]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=24955]      main()                                    Iterating through file looking for sections matching: %environment
+VERBOSE [U=0,P=3910]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=3910]       main()                                    Iterating through file looking for sections matching: %environment
 [0mRunning post scriptlet
-VERBOSE [U=0,P=24962]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=24962]      main()                                    Iterating through file looking for sections matching: %post
-[0m+ echo Hello from inside the container
-Hello from inside the container
-+ sed -i s/$/ universe/ /etc/apt/sources.list
+VERBOSE [U=0,P=3917]       message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=3917]       main()                                    Iterating through file looking for sections matching: %post
+[0m+ sed -i s/$/ universe/ /etc/apt/sources.list
 + apt-get update
 Get:1 http://us.archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
 Get:2 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1201 kB]
 Get:3 http://us.archive.ubuntu.com/ubuntu xenial/main Translation-en [568 kB]
 Get:4 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7532 kB]
 Get:5 http://us.archive.ubuntu.com/ubuntu xenial/universe Translation-en [4354 kB]
-Fetched 13.9 MB in 2s (6488 kB/s)
+Fetched 13.9 MB in 2s (6148 kB/s)
 Reading package lists...
 + apt-get -y install vim cmake python python-pip wget virtualenv
 Reading package lists...
@@ -916,7 +913,7 @@ Get:138 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim-runtime all 2:
 Get:139 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 vim amd64 2:7.4.1689-3ubuntu1 [1008 kB]
 Get:140 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 virtualenv all 15.0.1+ds-3 [4342 B]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 112 MB in 4s (24.5 MB/s)
+Fetched 112 MB in 6s (17.1 MB/s)
 Selecting previously unselected package libatm1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7174 files and directories currently installed.)
 Preparing to unpack .../libatm1_1%3a2.5.1-1.5_amd64.deb ...
@@ -1558,9 +1555,355 @@ Installing collected packages: numpy, six, cycler, kiwisolver, python-dateutil, 
 Successfully installed backports.functools-lru-cache-1.5 cycler-0.10.0 kiwisolver-1.0.1 matplotlib-2.2.2 numpy-1.14.5 pyparsing-2.2.0 python-dateutil-2.7.3 pytz-2018.4 six-1.11.0 subprocess32-3.5.2
 You are using pip version 8.1.1, however version 10.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
++ julia /usr/local/data/examples/runfirst.jl
+INFO: Cloning PyPlot from git://github.com/JuliaPy/PyPlot.jl.git
+INFO: Computing changes...
+INFO: Cloning cache of BinDeps from https://github.com/JuliaLang/BinDeps.jl.git
+INFO: Cloning cache of ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+INFO: Cloning cache of Colors from https://github.com/JuliaGraphics/Colors.jl.git
+INFO: Cloning cache of Compat from https://github.com/JuliaLang/Compat.jl.git
+INFO: Cloning cache of Conda from https://github.com/JuliaPy/Conda.jl.git
+INFO: Cloning cache of FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+INFO: Cloning cache of JSON from https://github.com/JuliaIO/JSON.jl.git
+INFO: Cloning cache of LaTeXStrings from https://github.com/stevengj/LaTeXStrings.jl.git
+INFO: Cloning cache of MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+INFO: Cloning cache of Nullables from https://github.com/JuliaArchive/Nullables.jl.git
+INFO: Cloning cache of PyCall from https://github.com/JuliaPy/PyCall.jl.git
+INFO: Cloning cache of Reexport from https://github.com/simonster/Reexport.jl.git
+INFO: Cloning cache of SHA from https://github.com/staticfloat/SHA.jl.git
+INFO: Cloning cache of URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+INFO: Cloning cache of VersionParsing from https://github.com/stevengj/VersionParsing.jl.git
+INFO: Installing BinDeps v0.8.8
+INFO: Installing ColorTypes v0.6.7
+INFO: Installing Colors v0.8.2
+INFO: Installing Compat v0.69.0
+INFO: Installing Conda v0.8.1
+INFO: Installing FixedPointNumbers v0.4.6
+INFO: Installing JSON v0.17.2
+INFO: Installing LaTeXStrings v1.0.0
+INFO: Installing MacroTools v0.4.1
+INFO: Installing Nullables v0.0.5
+INFO: Installing PyCall v1.17.1
+INFO: Installing Reexport v0.1.0
+INFO: Installing SHA v0.5.7
+INFO: Installing URIParser v0.3.1
+INFO: Installing VersionParsing v1.1.1
+INFO: Building Conda
+INFO: Building PyCall
+Info: PyCall is using /usr/bin/python (Python 2.7.11+) at /usr/bin/python, libpython = libpython2.7
+Info: /usr/local/julia/local/share/julia/site/v0.6/PyCall/deps/deps.jl has been updated
+Info: /usr/local/julia/local/share/julia/site/v0.6/PyCall/deps/PYTHON has been updated
+INFO: Package database updated
+INFO: Cloning jInv from https://github.com/JuliaInv/jInv.jl
+INFO: Computing changes...
+INFO: Cloning cache of KrylovMethods from https://github.com/lruthotto/KrylovMethods.jl.git
+INFO: Installing KrylovMethods v0.4.0
+INFO: Cloning FactoredEikonalFastMarching from https://github.com/JuliaInv/FactoredEikonalFastMarching.jl
+INFO: Computing changes...
+INFO: No packages to install, update or remove
++ julia -e Pkg.build("PyCall")
+INFO: Building Conda
+INFO: Building PyCall
+Info: PyCall is using /usr/bin/python (Python 2.7.11+) at /usr/bin/python, libpython = libpython2.7
+Info: /usr/local/julia/local/share/julia/site/v0.6/PyCall/deps/deps.jl has not changed
+Info: /usr/local/julia/local/share/julia/site/v0.6/PyCall/deps/PYTHON has not changed
++ julia /usr/local/data/examples/runExperiments.jl
++ tee /usr/local/data/results.txt
+WARNING: No working GUI backend found for matplotlib
+******************** 2D experiments ***************************
+workunit is: 0.00019793975000000002 for n = [161, 321]
+workunit is: 0.00078361505 for n = [321, 641]
+workunit is: 0.00337106805 for n = [641, 1281]
+workunit is: 0.0136299195 for n = [1281, 2561]
+******************** Gradient Slowness ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGrad2D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:20
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:38
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGrad2D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:21
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:38
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 20 runs.
+[0.0250,0.0250]	[161,321]	[3.71e-03,9.42e-04]	0.04s(219.75)	[9.33e-05,9.26e-06]	0.04s(207.98)
+Timing is based on averaged 5 runs.
+[0.0125,0.0125]	[321,641]	[1.85e-03,4.69e-04]	0.16s(204.36)	[3.30e-05,2.21e-06]	0.17s(210.85)
+Timing is based on averaged 2 runs.
+[0.0063,0.0063]	[641,1281]	[9.22e-04,2.34e-04]	0.74s(219.94)	[1.14e-05,5.32e-07]	0.74s(220.36)
+Timing is based on averaged 1 runs.
+[0.0031,0.0031]	[1281,2561]	[4.60e-04,1.17e-04]	3.19s(234.20)	[4.06e-06,1.28e-07]	3.28s(241.00)
+******************** Gradient Velocity ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: acosh(x::AbstractArray{T}) where T <: Number is deprecated, use acosh.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] acosh(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv2D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:100
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:50
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv2D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:101
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:50
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv2D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:102
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:50
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 20 runs.
+[0.0250,0.0250]	[161,321]	[2.66e-02,1.01e-02]	0.04s(189.46)	[4.86e-04,2.90e-04]	0.04s(198.71)
+Timing is based on averaged 5 runs.
+[0.0125,0.0125]	[321,641]	[1.32e-02,5.05e-03]	0.17s(216.26)	[1.67e-04,7.38e-05]	0.17s(219.82)
+Timing is based on averaged 2 runs.
+[0.0063,0.0063]	[641,1281]	[6.59e-03,2.52e-03]	0.84s(248.67)	[5.18e-05,1.85e-05]	0.76s(224.35)
+Timing is based on averaged 1 runs.
+[0.0031,0.0031]	[1281,2561]	[3.29e-03,1.26e-03]	3.26s(239.42)	[1.90e-05,4.61e-06]	3.26s(239.10)
+******************** Gaussian factor ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: div(A::AbstractArray, B::Number) is deprecated, use div.(A, B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] div(::Array{Int64,1}, ::Int64) at ./deprecated.jl:57
+ [3] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:138
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:64
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: exp(x::AbstractArray{T}) where T <: Number is deprecated, use exp.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] exp(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getSmoothFactoredModel(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:198
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:142
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:64
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: exp(x::AbstractArray{T}) where T <: Number is deprecated, use exp.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] exp(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getSmoothFactoredModel(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:199
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:142
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:64
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: exp(x::AbstractArray{T}) where T <: Number is deprecated, use exp.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] exp(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getSmoothFactoredModel(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:200
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:142
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:64
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getAnalytic2DeikonalSolutionAll(::Array{Int64,1}, ::Array{Float64,1}, ::Array{Int64,1}) at /usr/local/julia/local/share/julia/site/v0.6/FactoredEikonalFastMarching/src/getAnalyticEikonalSolution2D.jl:75
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:143
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:64
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 20 runs.
+[0.0250,0.0250]	[161,321]	[6.15e-03,3.86e-03]	0.04s(189.24)	[1.60e-04,5.94e-05]	0.04s(201.58)
+Timing is based on averaged 5 runs.
+[0.0125,0.0125]	[321,641]	[3.07e-03,1.93e-03]	0.17s(223.00)	[3.85e-05,1.56e-05]	0.17s(214.03)
+Timing is based on averaged 2 runs.
+[0.0063,0.0063]	[641,1281]	[1.54e-03,9.67e-04]	0.74s(220.94)	[1.08e-05,4.03e-06]	0.74s(219.55)
+Timing is based on averaged 1 runs.
+[0.0031,0.0031]	[1281,2561]	[7.68e-04,4.83e-04]	3.26s(239.00)	[3.18e-06,1.04e-06]	3.26s(239.27)
+*******************************************************************************
+*******************************************************************************
+************************* 3-D EXPERIMENTS *************************************
+*******************************************************************************
+*******************************************************************************
+workunit is: 0.00014859275 for n = [33, 33, 17]
+workunit is: 0.00097825545 for n = [65, 65, 33]
+workunit is: 0.0071828745 for n = [129, 129, 65]
+workunit is: 0.05597351575 for n = [257, 257, 129]
+******************** Gradient Slowness ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGrad3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:43
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:102
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGrad3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:44
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:102
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 55 runs.
+[0.0500,0.0500]	[33,33]	[5.41e-03,1.46e-03]	0.05s(323.33)	[5.63e-04,1.49e-04]	0.05s(320.83)
+Timing is based on averaged 8 runs.
+[0.0250,0.0250]	[65,65]	[2.64e-03,7.05e-04]	0.38s(387.42)	[2.00e-04,3.52e-05]	0.40s(407.00)
+Timing is based on averaged 1 runs.
+[0.0125,0.0125]	[129,129]	[1.30e-03,3.46e-04]	3.02s(419.76)	[6.99e-05,7.82e-06]	3.59s(499.40)
+Timing is based on averaged 1 runs.
+[0.0063,0.0063]	[257,257]	[6.41e-04,1.72e-04]	31.17s(556.85)	[2.51e-05,1.68e-06]	31.45s(561.80)
+******************** Gradient Velocity ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: acosh(x::AbstractArray{T}) where T <: Number is deprecated, use acosh.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] acosh(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:125
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:113
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:126
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:113
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:127
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:113
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalyticalConstGradInv3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:128
+ [4] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:113
+ [5] include_from_node1(::String) at ./loading.jl:576
+ [6] include(::String) at ./sysimg.jl:14
+ [7] process_options(::Base.JLOptions) at ./client.jl:305
+ [8] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 55 runs.
+[0.0500,0.0500]	[33,33]	[1.35e-02,5.04e-03]	0.05s(326.48)	[2.33e-03,9.40e-04]	0.05s(326.27)
+Timing is based on averaged 8 runs.
+[0.0250,0.0250]	[65,65]	[6.24e-03,2.44e-03]	0.37s(373.77)	[5.12e-04,1.74e-04]	0.39s(393.70)
+Timing is based on averaged 1 runs.
+[0.0125,0.0125]	[129,129]	[3.00e-03,1.20e-03]	3.56s(495.15)	[1.70e-04,3.83e-05]	3.39s(471.38)
+Timing is based on averaged 1 runs.
+[0.0063,0.0063]	[257,257]	[1.47e-03,5.99e-04]	29.33s(523.95)	[5.42e-05,9.33e-06]	31.81s(568.26)
+******************** Gaussian factor ***************************
+h		n		error(1st)[max,l2]	time(1st)	error(2nd)[max,l2]	time(2nd)
+WARNING: exp(x::AbstractArray{T}) where T <: Number is deprecated, use exp.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] exp(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getSmoothFactoredModel3D(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:219
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:165
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:124
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,3}) at ./deprecated.jl:57
+ [3] getAnalytic3DeikonalSolutionAll(::Array{Int64,1}, ::Array{Float64,1}, ::Array{Int64,1}) at /usr/local/julia/local/share/julia/site/v0.6/FactoredEikonalFastMarching/src/getAnalyticEikonalSolution3D.jl:86
+ [4] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:167
+ [5] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:124
+ [6] include_from_node1(::String) at ./loading.jl:576
+ [7] include(::String) at ./sysimg.jl:14
+ [8] process_options(::Base.JLOptions) at ./client.jl:305
+ [9] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+WARNING: sqrt(x::AbstractArray{T}) where T <: Number is deprecated, use sqrt.(x) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] sqrt(::Array{Float64,2}) at ./deprecated.jl:57
+ [3] getL0AtSrc3D(::Array{Float64,1}) at /usr/local/julia/local/share/julia/site/v0.6/FactoredEikonalFastMarching/src/getAnalyticEikonalSolution3D.jl:159
+ [4] getAnalytic3DeikonalSolutionAll(::Array{Int64,1}, ::Array{Float64,1}, ::Array{Int64,1}) at /usr/local/julia/local/share/julia/site/v0.6/FactoredEikonalFastMarching/src/getAnalyticEikonalSolution3D.jl:98
+ [5] getSmoothGaussianMedium(::Array{Int64,1}, ::Array{Float64,1}) at /usr/local/data/examples/getAnalyticalMediums.jl:167
+ [6] runPaperExperiments() at /usr/local/data/examples/runExperiments.jl:124
+ [7] include_from_node1(::String) at ./loading.jl:576
+ [8] include(::String) at ./sysimg.jl:14
+ [9] process_options(::Base.JLOptions) at ./client.jl:305
+ [10] _start() at ./client.jl:371
+while loading /usr/local/data/examples/runExperiments.jl, in expression starting on line 131
+Timing is based on averaged 55 runs.
+[0.0500,0.0500]	[33,33]	[7.53e-03,3.26e-03]	0.05s(310.91)	[3.94e-04,1.27e-04]	0.05s(341.15)
+Timing is based on averaged 8 runs.
+[0.0250,0.0250]	[65,65]	[3.69e-03,1.56e-03]	0.37s(376.42)	[9.81e-05,2.85e-05]	0.38s(390.97)
+Timing is based on averaged 1 runs.
+[0.0125,0.0125]	[129,129]	[1.83e-03,7.62e-04]	3.10s(432.05)	[3.10e-05,7.49e-06]	3.33s(463.20)
+Timing is based on averaged 1 runs.
+[0.0063,0.0063]	[257,257]	[9.11e-04,3.77e-04]	28.86s(515.62)	[1.04e-05,2.06e-06]	32.50s(580.72)
 Adding runscript
-VERBOSE [U=0,P=31608]      message_init()                            Set messagelevel to: 5
-[0mDEBUG   [U=0,P=31608]      main()                                    Iterating through file looking for sections matching: %runscript
+VERBOSE [U=0,P=32376]      message_init()                            Set messagelevel to: 5
+[0mDEBUG   [U=0,P=32376]      main()                                    Iterating through file looking for sections matching: %runscript
 [0mFinalizing Singularity container
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1618,9 +1961,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-date' = 'Tue,_19_Jun_2018_17:42:11_-0500'
+DEBUG Adding label: 'org.label-schema.build-date' = 'Thu,_21_Jun_2018_13:48:12_-0500'
 DEBUG ADD org.label-schema.build-date from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-date is Tue,_19_Jun_2018_17:42:11_-0500
+DEBUG org.label-schema.build-date is Thu,_21_Jun_2018_13:48:12_-0500
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
@@ -1709,9 +2052,9 @@ VERBOSE2 SHUB_NAMEBYCOMMIT not defined (None)
 VERBOSE2 SHUB_CONTAINERNAME not defined (None)
 VERBOSE2 SINGULARITY_CONTENTS found as /usr/local/var/singularity/mnt/container/.singularity.d/.layers
 VERBOSE2 SINGULARITY_PYTHREADS found as 9
-DEBUG Adding label: 'org.label-schema.build-size' = '1173MB'
+DEBUG Adding label: 'org.label-schema.build-size' = '1255MB'
 DEBUG ADD org.label-schema.build-size from /usr/local/var/singularity/mnt/container/.singularity.d/labels.json
-DEBUG org.label-schema.build-size is 1173MB
+DEBUG org.label-schema.build-size is 1255MB
 VERBOSE2 Writing json file /usr/local/var/singularity/mnt/container/.singularity.d/labels.json with mode w.
 VERBOSE2 SINGULARITY_COMMAND_ASIS found as False
 VERBOSE2 SINGULARITY_ROOTFS found as /usr/local/var/singularity/mnt/container
